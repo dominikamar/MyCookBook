@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>My CookBook</title>
+		<link rel="stylesheet" href="dist/css/main.min.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@100;400;700&display=swap"
+			rel="stylesheet" />
+		<script
+			src="https://kit.fontawesome.com/a8199a168e.js"
+			crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<section id="home" class="hero-img">
+				<div class="hero-img__img">
+					<div class="hero-img__shadow"></div>
+					<h1 class="hero-img__heading">My CookBook</h1>
+				</div>
+			</section>
+			<nav class="nav-section">
+				<a href="#home"><i class="fa-solid fa-house"></i></a>
+				<a href="#recipes">recipes</a>
+				<a href="#add-recipes">add new</a>
+			</nav>
+			<section id="recipes" class="recipes">
+				<h2 class="recipes__header">Recipes</h2>
+				<div class="recipes__search-bar">
+					<i class="fa-solid fa-magnifying-glass"></i>
+					<input
+						type="text"
+						placeholder="Search for the recipe..."
+						class="search-bar-input" />
+				</div>
+				<p class="error-recipes">You don't have any recipes.</p>
+				<div class="recipes__saved-recipes">
+					<div class="recipes__recipe-box">
+						<div class="recipes__recipe-img">
+							<img
+								src="https://cdn.pixabay.com/photo/2022/11/08/05/34/lasagna-7577748__340.jpg"
+								alt="Photo of the prepared meal" />
+						</div>
+						<h3 class="recipes__recipe-title">Lasagne</h3>
+						<div class="recipes__recipe-rating">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+
+							<i class="fa-regular fa-star"></i>
+						</div>
+						<div class="recipes__icons">
+							<button class="delete">
+								<i class="fa-solid fa-trash"></i>
+							</button>
+
+							<button class="recipes__show-recipe-btn">
+								<i class="fa-solid fa-circle-info"></i>
+							</button>
+						</div>
+						<dialog class="recipes__recipe-modal">
+							<h3>Ingredients:</h3>
+							<p class="recipes__recipe-ingredients">
+								2 tbsp olive oil, 900g/2lb beef mince, 2 onions, roughly
+								chopped, 4 sticks celery, diced (optional), 2 garlic cloves,
+								crushed, 2 level tbsp plain flour, 150ml/¼ pint beef stock, 1
+								tbsp redcurrant jelly (optional) or 1 tsp caster sugar, 3 tbsp
+								tomato purée, 1 tbsp chopped thyme, 2 x 400g cans chopped
+								tomatoes
+							</p>
+							<h3>Instructions:</h3>
+							<p class="recipes__recipe-instructions">
+								Start by making the sauce with ground beef, bell peppers,
+								onions, and a combo of tomato sauce, tomato paste, and crushed
+								tomatoes. The three kinds of tomatoes gives the sauce great
+								depth of flavor. Let this simmer while you boil the noodles and
+								get the cheeses ready. We're using ricotta, shredded mozzarella,
+								and parmesan -- like the mix of tomatoes, this 3-cheese blend
+								gives the lasagna great flavor! From there, it's just an
+								assembly job. A cup of meat sauce, a layer of noodles, more
+								sauce, followed by a layer of cheese. Repeat until you have
+								three layers and have used up all the ingredients. Bake until
+								bubbly and you're ready to eat!
+							</p>
+							<button class="close-recipe-btn">Close</button>
+						</dialog>
+					</div>
+					<div class="recipes__recipe-box">
+						<div class="recipes__recipe-img">
+							<img
+								src="https://cdn.pixabay.com/photo/2016/11/20/09/06/bowl-1842294__340.jpg"
+								alt="Photo of the prepared meal" />
+						</div>
+						<h3 class="recipes__recipe-title">Homemade French Fries</h3>
+						<div class="recipes__recipe-rating">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-regular fa-star"></i>
+							<i class="fa-regular fa-star"></i>
+						</div>
+						<div class="recipes__icons">
+							<button class="delete">
+								<i class="fa-solid fa-trash"></i>
+							</button>
+
+							<button class="recipes__show-recipe-btn">
+								<i class="fa-solid fa-circle-info"></i>
+							</button>
+						</div>
+						<dialog class="recipes__recipe-modal">
+							<h3>Ingredients:</h3>
+							<p>5 potatoes, parsley</p>
+							<h3>Instructions:</h3>
+							<p>
+								Coat a baking sheet with olive oil to protect against potato
+								stick-age. Clean your potatoes (I leave the peels on) and slice
+								them into 1/4-inch-wide sticks. Soak the potatoes in hot water.
+								(Remember, this step is worth it!) Drain and dry the potatoes
+								with a paper towel or kitchen towel. Toss them with the
+								remaining oil and spices until coated, then place them on the
+								baking sheet in a single layer. Bake at 450 degrees F for 15 to
+								20 minutes. Use a spatula to flip the fries, and move them into
+								a single layer. Bake for an additional 5 to 10 minutes, or until
+								the exterior is golden brown and as crispy as you like. Sprinkle
+								with some extra salt to taste. DIG IN!
+							</p>
+							<button class="close-recipe-btn">Close</button>
+						</dialog>
+					</div>
+					<div class="recipes__recipe-box">
+						<div class="recipes__recipe-img">
+							<img
+								src="https://cdn.pixabay.com/photo/2016/11/22/18/52/cake-1850011__340.jpg"
+								alt="Photo of the prepared meal" />
+						</div>
+						<h3 class="recipes__recipe-title">Chocolate Cake</h3>
+						<div class="recipes__recipe-rating">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+						</div>
+						<div class="recipes__icons">
+							<button class="delete">
+								<i class="fa-solid fa-trash"></i>
+							</button>
+							<button class="recipes__show-recipe-btn">
+								<i class="fa-solid fa-circle-info"></i>
+							</button>
+						</div>
+						<dialog class="recipes__recipe-modal">
+							<h3>Ingredients:</h3>
+							<p>
+								225g/8oz plain flour 350g/12½oz caster sugar 85g/3oz cocoa
+								powder 1½ tsp baking powder 1½ tsp bicarbonate of soda 2
+								free-range eggs 250ml/9fl oz milk 125ml/4½fl oz vegetable oil 2
+								tsp vanilla extract 250ml/9fl oz boiling water
+							</p>
+							<h3>Instructions:</h3>
+							<p>
+								Preheat the oven to 180C/160C Fan/Gas 4. Grease and line two
+								20cm/8in sandwich tins. For the cake, place all of the cake
+								ingredients, except the boiling water, into a large mixing bowl.
+								Using a wooden spoon, or electric whisk, beat the mixture until
+								smooth and well combined. Add the boiling water to the mixture,
+								a little at a time, until smooth. (The cake mixture will now be
+								very liquid.) Divide the cake batter between the sandwich tins
+								and bake in the oven for 25–35 minutes, or until the top is firm
+								to the touch and a skewer inserted into the centre of the cake
+								comes out clean. Remove the cakes from the oven and allow to
+								cool completely, still in their tins, before icing. For the
+								chocolate icing, heat the chocolate and cream in a saucepan over
+								a low heat until the chocolate melts. Remove the pan from the
+								heat and whisk the mixture until smooth, glossy and thickened.
+								Set aside to cool for 1–2 hours, or until thick enough to spread
+								over the cake. To assemble the cake, run a round-bladed knife
+								around the inside of the cake tins to loosen the cakes.
+								Carefully remove the cakes from the tins. Spread a little
+								chocolate icing over the top of one of the chocolate cakes, then
+								carefully top with the other cake. Transfer the cake to a
+								serving plate and ice the cake all over with the chocolate
+								icing, using a palette knife.
+							</p>
+							<button class="close-recipe-btn">Close</button>
+						</dialog>
+					</div>
+				</div>
+			</section>
+			<section id="add-recipes" class="create-recipe">
+				<div class="create-recipe__form">
+					<h3 class="create-recipe__header">Add your recipe</h3>
+					<label for="recipe-title">Title:</label>
+					<input
+						type="text"
+						id="recipe-title"
+						class="recipe-title"
+						placeholder="Your recipe title..." />
+					<label for="recipe-rating">Rate:</label>
+					<select onchange="selectValue()" id="recipe-rating">
+						<option value="0" disabled selected>
+							-- Please choose the option --
+						</option>
+						<option value="5">Delicious</option>
+						<option value="4">Very good</option>
+						<option value="3">Quite tasty</option>
+						<option value="2">Not my favourite</option>
+						<option value="1">Needs some work</option>
+					</select>
+					<label for="recipe-img">Image:</label>
+					<input
+						type="url"
+						id="recipe-img"
+						class="recipe-img"
+						placeholder="Add link to photo...(optional)" />
+
+					<label for="recipe-ingredients">Ingredients:</label>
+					<textarea
+						placeholder="Write your ingredients..."
+						name="recipe-ingredients"
+						id="recipe-ingredients"
+						class="recipe-ingredients"></textarea>
+					<label for="recipe-instructions">Recipe:</label>
+					<textarea
+						placeholder="Write your instructions..."
+						name="recipe-instructions"
+						id="recipe-instructions"
+						class="recipe-instructions"></textarea>
+					<p class="create-recipe__error-text">Please fill all the places.</p>
+					<button class="create-recipe__btn">
+						<i class="fa-solid fa-plus"></i> Add recipe
+					</button>
+				</div>
+			</section>
+		</div>
+		<script src="dist/js/main.min.js"></script>
+	</body>
+</html>
