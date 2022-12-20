@@ -1,1 +1,1 @@
-# MyCookBook
+My CookBook is a website application designed to save recipes whether you have created them yourself or just copied them from a website or a magazine. We all remember notebooks that belonged to our grandmothers, where they used to keep all of their secret recipes that they collected over the years. I decided to create a website which allows you to do the same thing, in a digital, more up-to-date way. Each recipe can be rated, so that you know which of them still need some improvements. What's more, you can easily find your favourite recipe using a search bar. 
